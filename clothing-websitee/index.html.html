@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wildfiber - Where Nature Meets Style</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f4f1ea;
+      color: #333;
+    }
+    header {
+      background-color: #2f4f2f;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: #a0522d;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .features, .products, .shop-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+    .feature, .product, .shop-filters div {
+      flex: 1;
+      min-width: 250px;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.25rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+    .contact-form button {
+      margin-top: 1.5rem;
+      background-color: #2f4f2f;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #2f4f2f;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    footer .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .lookbook img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .account-form {
+      max-width: 400px;
+      margin: 2rem auto;
+      text-align: left;
+    }
+    .account-form input {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+    }
+    @media (max-width: 768px) {
+      .features, .products, .footer-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Wildfiber Logo" />
+    <nav>
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#contact">Contact</a>
+      <a href="#account">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Wildfiber</h1>
+    <p>Where Nature Meets Style</p>
+    <button class="btn">Explore Collection</button>
+    <button class="btn">Learn More</button>
+  </section>
+
+  <section class="section">
+    <h2>Why Wildfiber?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Eco-Conscious Materials</h3>
+        <p>Natural, organic & biodegradable fabrics crafted for the conscious consumer.</p>
+      </div>
+      <div class="feature">
+        <h3>Handcrafted in India</h3>
+        <p>We support local artisans and communities by celebrating traditional craftsmanship.</p>
+      </div>
+      <div class="feature">
+        <h3>Free Shipping</h3>
+        <p>Available across India on all orders above ₹999. Fast and reliable delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="shop">
+    <h2>Our Products</h2>
+    <div class="shop-filters">
+      <div><strong>Filter by Size:</strong> XS S M L XL</div>
+      <div><strong>Filter by Color:</strong> Beige Green Brown</div>
+      <div><strong>Category:</strong> Men Women Unisex | Tops Bottoms Outerwear Accessories</div>
+      <div><strong>Sort by:</strong> Newest | Price ↑ | Price ↓</div>
+    </div>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Product 1">
+        <h3>Organic Cotton Shirt</h3>
+        <p>₹1,299</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn">Wishlist</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Product 2">
+        <h3>Handwoven Scarf</h3>
+        <p>₹799</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn">Wishlist</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Product 3">
+        <h3>Bamboo Fiber Kurta</h3>
+        <p>₹1,999</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn">Wishlist</button>
+      </div>
+    </div>
+    <p><a href="#">View Size Guide</a></p>
+  </section>
+
+  <section class="section" id="lookbook">
+    <h2>Style Inspiration</h2>
+    <div class="lookbook">
+      <img src="https://via.placeholder.com/300x400" alt="Look 1">
+      <img src="https://via.placeholder.com/300x400" alt="Look 2">
+      <p>Shop the Look: <button class="btn">View Outfit</button></p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: support@wildfiber.in | Phone: +91 98765 43210</p>
+    <p><a href="#">FAQ</a> | <a href="#">Shipping Info</a> | <a href="#">Returns</a> | <a href="#">Track Order</a></p>
+  </section>
+
+  <section class="section" id="account">
+    <h2>Login / Register</h2>
+    <form class="account-form">
+      <label>Email</label>
+      <input type="email" />
+      <label>Password</label>
+      <input type="password" />
+      <button class="btn">Login</button>
+    </form>
+    <p>Don’t have an account? <a href="#">Register here</a></p>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#">Home</a><br>
+        <a href="#shop">Shop</a><br>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Shipping Info</a><br>
+        <a href="#">Returns</a><br>
+        <a href="#">FAQ</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Terms & Conditions</a><br>
+        <a href="#">Privacy Policy</a><br>
+        <a href="#">Cookie Policy</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p>Follow us on:</p>
+        <p>🌿 Instagram | 🌿 Facebook | 🌿 Pinterest</p>
+        <p>Payment Methods: Visa, MasterCard, UPI, Netbanking</p>
+      </div>
+    </div>
+    <p style="margin-top: 2rem">&copy; 2025 Wildfiber. Made with ❤️ in India.</p>
+  </footer>
+</body>
+</html>
